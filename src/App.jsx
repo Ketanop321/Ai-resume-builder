@@ -1,13 +1,18 @@
+import { useUser } from "@clerk/clerk-react";
 import React from "react";
-import { Button } from "@/components/ui/button"
+import { Navigate, Outlet } from "react-router-dom";
+import Header from "./components/custom/Header";
 
 function App() {
+  const {user,isLoaded,isSignedIn} = useUser()
+
+  if(!isSignedIn && isLoaded) {
+    return <Navigate to={'/auth/sign-in'} />
+  }
   return (
     <>
-    Subscribe to ketanop
-    <Button >Button</Button>
-      <Button variant="secondary">Secondary</Button>
-      
+    <Header/>
+    <Outlet/>
     </>
   );
 }
