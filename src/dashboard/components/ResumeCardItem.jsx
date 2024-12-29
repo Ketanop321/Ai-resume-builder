@@ -5,8 +5,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import {
@@ -18,7 +16,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 import GlobalApi from './../../../service/GlobalApi'
 import { toast } from 'sonner'
@@ -28,9 +25,6 @@ function ResumeCardItem({resume,refreshData}) {
   const navigation=useNavigate();
   const [openAlert,setOpenAlert]=useState(false);
   const [loading,setLoading]=useState(false);
-  // const onMenuClick=(url)=>{
-  //   navigation(url)
-  // }
 
 
   const onDelete=()=>{
@@ -65,7 +59,7 @@ function ResumeCardItem({resume,refreshData}) {
               </div>
         </div>
         </Link>
-        <div className='border p-3 flex justify-between  text-white rounded-b-lg shadow-lg'
+        <div className='border p-3 flex justify-between rounded-b-lg shadow-lg'
          style={{
           background:resume?.themeColor
         }}>

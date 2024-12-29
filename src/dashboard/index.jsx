@@ -48,7 +48,7 @@ function Dashboard() {
           [1, 2, 3, 4].map((item) => (
             <div
               key={item}
-              className='h-[280px] rounded-lg bg-slate-200 animate-pulse'
+              className='h-[280px] rounded-lg animate-pulse'
             ></div>
           ))
         )}
