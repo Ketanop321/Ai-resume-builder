@@ -59,7 +59,7 @@ function ResumeCardItem({resume,refreshData}) {
               </div>
         </div>
         </Link>
-        <div className='border p-3 flex justify-between  text-white rounded-b-lg shadow-lg'
+        <div className='border p-3 flex justify-between rounded-b-lg shadow-lg'
          style={{
           background:resume?.themeColor
         }}>
