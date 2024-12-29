@@ -40,6 +40,9 @@ cd ai-resume-builder
 # Install dependencies
 npm install
 
+# First Start Stapi server (Use For Database and api)
+nom run devlop
+
 # Start development server
 npm run dev
 ```
